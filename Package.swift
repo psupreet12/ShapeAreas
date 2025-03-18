@@ -11,6 +11,11 @@ let package = Package(
             name: "ShapeAreas",
             targets: ["ShapeAreas"]),
     ],
+    dependencies: [
+        // Add your external dependencies here
+        .package(url: "https://github.com/psupreet12/ShapeAreas.git", from: "1.0.0") ,
+        .package(url: "https://github.com/psupreet12/ShapeAreas.git", from: "1.1.0")// Add this line
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
