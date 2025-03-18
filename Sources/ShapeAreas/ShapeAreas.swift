@@ -31,15 +31,6 @@ class SquareArea {
 }
 public class ShapeAreaCalculator {
 
-    // Function to calculate the area of a square (iPhone flavour)
-    @available(iOS, deprecated: 14.0, message: "use calculateShapeAreas")
-    public static func calculateArea() -> (String, Double) {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return ("Triangle",TraingleArea(height: 12, width: 12).calculateArea())
-        } else {
-            return ("Square",SquareArea(side: 12).calculateArea())
-        }
-    }
     public static func calculateShapeAreas() -> (String, Double) {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return ("Triangle",TraingleArea(height: 12, width: 12).calculateArea())
