@@ -12,7 +12,7 @@ let package = Package(
     ],
     dependencies: [
         // Add your external dependencies here
-        .package(url: "https://github.com/psupreet12/ShapeAreas.git", .upToNextMajor(from: "3.0.0")) // Add this line
+        //.package(url: "https://github.com/psupreet12/ShapeAreas.git", .upToNextMajor(from: "3.0.0")) // Add this line
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
