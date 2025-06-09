@@ -2,12 +2,13 @@
 // https://docs.swift.org/swift-book
 
 import Foundation
+// FRAMEWORK WITH INVOLMENT OF UIKIT
 import UIKit
-protocol AreaFinder {
-    func calculateArea()
+protocol TraingleAreaProtocol {
+    func calculateArea() -> Double
 }
 
-class TraingleArea {
+class TraingleArea: TraingleAreaProtocol {
     var height: Int
     var width: Int
     init(height: Int, width: Int) {
@@ -19,7 +20,8 @@ class TraingleArea {
     }
     
 }
-class SquareArea {
+
+class SquareArea: TraingleAreaProtocol {
     var side: Int
     init(side: Int) {
         self.side = side
@@ -29,6 +31,7 @@ class SquareArea {
     }
     
 }
+
 public class ShapeAreaCalculator {
 
     public static func calculateShapeAreas() -> (String, Double) {
@@ -40,3 +43,31 @@ public class ShapeAreaCalculator {
     }
 }
 
+// FRAMEWORK WITH INVOLMENT OF UIKIT
+
+//protocol TraingleAreaProtocol {
+//    func calculateArea() -> Double
+//}
+//
+//class TraingleArea: TraingleAreaProtocol {
+//    var height: Int
+//    var width: Int
+//    init(height: Int, width: Int) {
+//        self.height = height
+//        self.width = width
+//    }
+//    func calculateArea() -> Double {
+//        return Double(0.5) * Double(height) * Double(width)
+//    }
+//    
+//}
+//
+//class SquareArea: TraingleAreaProtocol {
+//    var side: Int
+//    init(side: Int) {
+//        self.side = side
+//    }
+//    func calculateArea() -> Double {
+//        return Double(side * side)
+//    }
+//}

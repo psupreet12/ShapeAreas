@@ -3,10 +3,7 @@ import XCTest
 
 final class ShapeAreasTests: XCTestCase {
     func testExample() throws {
-        // XCTest Documentation
-        // https://developer.apple.com/documentation/xctest
-
-        // Defining Test Cases and Test Methods
-        // https://developer.apple.com/documentation/xctest/defining_test_cases_and_test_methods
+        var area = TraingleArea(height: 1, width: 1)
+        XCTAssertEqual(0.5, area)
     }
 }
